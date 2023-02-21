@@ -211,8 +211,6 @@ class DDCaloDigi_BIB : public Processor {
 
   bool  _useCLIC = false;   // use CLIC calorimeter
   bool  _useCrilin = false;   // use Crilin
-  bool  _usemodEcut = false;   // use Modified E cuts in ECal Barrel
-
 
   float _strip_abs_length = 1000000;  // absorption length along strip for non-uniformity modeling
   float _ecal_pixSpread = 0.05;       // relative spread of MPPC pixel signal

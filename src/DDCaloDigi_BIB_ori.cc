@@ -59,10 +59,10 @@ struct XToLower{
 };
 
 //Thresholds optimized for BIB at 1.5 TeV
-bool applyDifferentialThresholdEcalBIB(CalorimeterHitImpl * calhit, bool useCLIC, bool useCrilin, bool useModEcut) {
+bool applyDifferentialThresholdEcalBIB(CalorimeterHitImpl * calhit, bool useCLIC, bool useCrilin) {
   bool pass = false;
 
-  if (useCLIC==false && useCrilin==false && useModEcut=false) pass = true;
+  if (useCLIC==false && useCrilin==false) pass = true;
 
   if (useCLIC==true){
 	  
@@ -155,12 +155,6 @@ bool applyDifferentialThresholdEcalBIB(CalorimeterHitImpl * calhit, bool useCLIC
 
 
   }
-
-  if (useModEcut==true){
-
-
-  }
-
 
   return pass;
 }
